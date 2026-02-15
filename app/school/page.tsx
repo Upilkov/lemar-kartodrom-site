@@ -65,7 +65,7 @@ export default function SchoolPage() {
   );
 }
 
-function Block({ title, items }: { title: string; items: string[] }) {
+function Block({ title, items }: { title: string; items: ReadonlyArray<string> }) {
   return (
     <div className="rounded-xl bg-white/5 ring-1 ring-white/10 p-4">
       <div className="text-sm text-white/85">{title}</div>

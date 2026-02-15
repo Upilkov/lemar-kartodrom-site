@@ -14,7 +14,7 @@ export function PricingCard({
   title: string;
   subtitle?: string;
   note?: string;
-  items: { label: string; price: string; sub?: string }[];
+  items: ReadonlyArray<{ label: string; price: string; sub?: string }>;
   image?: { src: string; alt: string };
 }) {
   return (
